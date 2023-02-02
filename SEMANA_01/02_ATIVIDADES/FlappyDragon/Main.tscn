@@ -48,7 +48,7 @@ texture = ExtResource( 1 )
 position = Vector2( 81, 71 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dragon"]
@@ -79,7 +79,7 @@ position = Vector2( 480.95, 320.248 )
 shape = SubResource( 5 )
 
 [node name="gameover" type="Sprite" parent="."]
-position = Vector2( 198.222, 300.034 )
+position = Vector2( 215, 302 )
 scale = Vector2( 0.561039, 0.594979 )
 texture = ExtResource( 11 )
 
