@@ -7,7 +7,7 @@ var x = 1.5
 # O eixo y é a reta vertical do plano 
 # Status é uma variável que inicia o jogo quando é igual a 1 ou encerra o jogo quando é igual a 0
 # vscore é o placar 
-var y = 1.5 
+var y = 3.0
 
 # executa essa função ao carregar o jogo
 func _ready():
