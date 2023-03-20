@@ -1,0 +1,121 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://blue_arara-removebg-preview (1).png" type="Texture" id=1]
+[ext_resource path="res://fase1.gd" type="Script" id=2]
+[ext_resource path="res://labirinto-removebg-preview.png" type="Texture" id=3]
+[ext_resource path="res://overwatch-2-mapa-rio-detalhes.jpg" type="Texture" id=4]
+[ext_resource path="res://rio-100-portugues-brasil.mp3" type="AudioStream" id=5]
+[ext_resource path="res://gaiola-removebg-preview.png" type="Texture" id=6]
+[ext_resource path="res://jade_2d-removebg-preview.png" type="Texture" id=7]
+
+[sub_resource type="GDScript" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 19.0
+height = 6.0
+
+[node name="Node2D" type="Node2D"]
+script = SubResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( -61, -281 )
+script = ExtResource( 2 )
+
+[node name="BlueArara-removebg-preview(1)" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 154, 355 )
+scale = Vector2( 0.0786573, 0.0995625 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 155, 350 )
+shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="KinematicBody2D"]
+stream = ExtResource( 5 )
+
+[node name="Labirinto-removebg-preview" type="Sprite" parent="."]
+position = Vector2( 511.25, 307 )
+scale = Vector2( 2.20897, 1.99052 )
+texture = ExtResource( 3 )
+
+[node name="Labirinto" type="StaticBody2D" parent="."]
+position = Vector2( -6.10352e-05, -6.10352e-05 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 149, 260, 162, 262, 163, 12.0001, 580, 14.0001, 582, 3.00006, 147, 2.00006, 147.459, 61.209 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Labirinto"]
+build_mode = 1
+polygon = PoolVector2Array( 220, 68.0001, 235, 68.0001, 237, 256, 444, 257, 442, 271, 416.5, 271, 236, 271, 235, 314, 238, 587, 238, 587, 223, 584 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Labirinto"]
+position = Vector2( 6.10351e-05, 6.10351e-05 )
+polygon = PoolVector2Array( 16, 1, 16, 8, 16, 349, 15, 388, 97.2482, 388.614, 149, 389, 149, 402, 16, 404, 17, 519, 15, 521, 152, 522, 151, 534, 100.779, 534.372, 16, 535, 17, 588, 217, 589, 221, 589, 220, 587, 237, 586, 237, 588, 730, 588, 881, 589, 881, 598, 3, 600, 1, 380, 1, 242, 0, -2 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 74.0001, 295, 74.0001, 295, 71.0001, 334, 101.838, 334.94, 222, 339, 220, 324, 89.0001, 325, 88.0001, 295 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 81.0001, 471, 79.0001, 457, 220, 456, 221, 469 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 442, 323, 442, 323, 295, 327, 295, 528, 669, 529, 668, 71.0001, 666, 65.0001, 653, 65.0001, 653, 519, 306, 520, 307, 338, 442, 338 )
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 520, 61.0001, 293, 61.0001, 294, 202, 294, 205, 507, 205, 508, 390, 367, 392, 368, 465, 595, 463, 595, 1.00006, 581, 1.00006, 581, 133, 375, 134, 374, 145, 580, 147, 582, 453, 383, 454, 382, 399, 521, 401, 522, 197, 521, 191, 308, 192, 308, 72.0001, 521, 75.0001 )
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 596, 6.10351e-05, 1025, 2.00006, 1028, 601, 871, 600, 1016, 599, 1016, 15.0001, 588, 15.0001 )
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 667, 62.0001, 669, 68.0001, 812, 69.0001, 813, 518, 800, 517, 795, 81.0001, 747.053, 80.6225, 668, 80.0001 )
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 729, 131, 728, 586, 742, 586, 742, 129 )
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 881, 191, 949, 188, 948, 204, 883, 205 )
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 813, 454, 881, 457, 881, 592, 870, 587, 869, 471, 814, 469 )
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 948, 132, 948, 132, 948, 144, 1014, 146, 1014, 133 )
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 949, 259, 949, 271, 1015, 271, 1015, 257 )
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 949, 59.0001, 867, 60.0001, 867, 387, 881, 387, 882, 74.0001, 949, 76.0001 )
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 884, 327, 884, 327, 955, 327, 954, 459, 1015, 461, 1015, 479, 943, 474, 940, 337, 880, 337 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Labirinto"]
+polygon = PoolVector2Array( 74.0001, 131, 74.0001, 131, 75.0001, 294, 88.0001, 297, 88.0001, 132 )
+
+[node name="Overwatch-2-mapa-rio-detalhes" type="Sprite" parent="."]
+position = Vector2( 519, 303 )
+scale = Vector2( 1.28, 1.33933 )
+z_index = -3
+texture = ExtResource( 4 )
+
+[node name="Gaiola-removebg-preview" type="Sprite" parent="."]
+position = Vector2( 974, 551 )
+scale = Vector2( 0.229946, 0.165916 )
+z_index = 1
+texture = ExtResource( 6 )
+
+[node name="Area2D" type="Area2D" parent="Gaiola-removebg-preview"]
+position = Vector2( -4235.78, -3320.96 )
+scale = Vector2( 4.34885, 6.02715 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Gaiola-removebg-preview/Area2D"]
+polygon = PoolVector2Array( 944, 527, 944, 529, 946, 591, 1003, 591, 1004, 527, 998, 519, 955, 519 )
+
+[node name="Jade2d-removebg-preview" type="Sprite" parent="Gaiola-removebg-preview/Area2D"]
+position = Vector2( 972, 560 )
+scale = Vector2( 0.102084, 0.100962 )
+texture = ExtResource( 7 )
+
+[connection signal="body_entered" from="Gaiola-removebg-preview/Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]

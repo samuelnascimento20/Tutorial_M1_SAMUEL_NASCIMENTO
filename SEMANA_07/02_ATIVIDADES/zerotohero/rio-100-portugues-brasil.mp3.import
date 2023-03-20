@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rio-100-portugues-brasil.mp3-7305e8fe425ea3f98a1b736b48027829.mp3str"
+
+[deps]
+
+source_file="res://rio-100-portugues-brasil.mp3"
+dest_files=[ "res://.import/rio-100-portugues-brasil.mp3-7305e8fe425ea3f98a1b736b48027829.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
