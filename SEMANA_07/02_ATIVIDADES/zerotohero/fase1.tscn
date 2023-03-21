@@ -21,7 +21,7 @@ script = SubResource( 2 )
 position = Vector2( -61, -281 )
 script = ExtResource( 2 )
 
-[node name="BlueArara-removebg-preview(1)" type="Sprite" parent="KinematicBody2D"]
+[node name="arara blue" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 154, 355 )
 scale = Vector2( 0.0786573, 0.0995625 )
 texture = ExtResource( 1 )
@@ -30,7 +30,7 @@ texture = ExtResource( 1 )
 position = Vector2( 155, 350 )
 shape = SubResource( 1 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="KinematicBody2D"]
+[node name="música abertura rio" type="AudioStreamPlayer2D" parent="KinematicBody2D"]
 stream = ExtResource( 5 )
 
 [node name="Labirinto-removebg-preview" type="Sprite" parent="."]
@@ -92,7 +92,7 @@ polygon = PoolVector2Array( 949, 59.0001, 867, 60.0001, 867, 387, 881, 387, 882,
 polygon = PoolVector2Array( 884, 327, 884, 327, 955, 327, 954, 459, 1015, 461, 1015, 479, 943, 474, 940, 337, 880, 337 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Labirinto"]
-polygon = PoolVector2Array( 74.0001, 131, 74.0001, 131, 75.0001, 294, 88.0001, 297, 88.0001, 132 )
+polygon = PoolVector2Array( 74.0001, 131, 74.0001, 131, 75.0001, 294, 88.0001, 297, 88.0001, 131 )
 
 [node name="Overwatch-2-mapa-rio-detalhes" type="Sprite" parent="."]
 position = Vector2( 519, 303 )

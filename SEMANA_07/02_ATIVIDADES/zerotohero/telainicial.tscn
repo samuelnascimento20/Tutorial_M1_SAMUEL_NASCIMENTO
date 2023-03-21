@@ -19,7 +19,7 @@ margin_right = 74.2027
 margin_bottom = 142.648
 text = "Início"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="música abertura rio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 
 [connection signal="pressed" from="SalveAJade/Button" to="." method="_on_Button_pressed"]
